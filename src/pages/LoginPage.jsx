@@ -14,7 +14,6 @@ const LoginPage = () => {
   const handleLogIn = (e) => {
     e.preventDefault()
     dispatch(login({ email, password }))
-     toast.success("Login successfully ✅"); 
   }
 
   return (

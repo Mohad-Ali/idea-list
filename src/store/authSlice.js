@@ -57,6 +57,9 @@ const authSlice = createSlice({
         toast.error("Invalid email or password")
         return;
       }
+      if (foundUser) {
+        toast.success("Login successfully ✅"); 
+      }
 
       // OPTIONAL Gmail check
       if (!email.endsWith("@gmail.com")) {
